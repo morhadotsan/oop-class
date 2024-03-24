@@ -18,9 +18,6 @@ class cFunctionClass {
 		}
 		
 		$this->proNum = $nuNum;
-	}
-	
-	public function cFuncGet(){
 		return $this->proNum;
 	}
 	
@@ -36,9 +33,6 @@ class cFunctionClass {
 		}
 		$fstArr[] = 1; // Include 1 in the array
 		$this->proArr = $fstArr;
-	}
-	
-	public function fsArrGet(){
 		return $this->proArr;
 	}
 	
@@ -47,8 +41,7 @@ class cFunctionClass {
 		
 		for($i = $start; $i <= $finish; $i++){
 			$maxVal = 0;
-			$this->fsArrSet($i);
-			$calcArr = $this->fsArrGet();
+			$calcArr = $this->fsArrSet($i);
 			$arrIter = count($calcArr);
 			$arrIter = $arrIter - 1;
 			foreach($calcArr as $cA){if($maxVal < $cA){ $maxVal = $cA; }}

@@ -7,8 +7,7 @@ if(isset($_GET["fstP_submit"]) && isset($_GET["fstP_num1"])){
 	$fstP_num1 = abs(floatval($_GET["fstP_num1"]));
 	if($fstP_num1 >= 1){
 		$ouArr = new cFunctionClass();
-		$ouArr->fsArrSet($fstP_num1);
-		$fstArr1 = $ouArr->fsArrGet();
+		$fstArr1 = $ouArr->fsArrSet($fstP_num1);
 	}
 }
 ?>
